@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main-style.css" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/regular.min.css" />
+    <script src="fontawesome/js/all.min.js"></script>
+    <script src="fontawesome/js/fontawesome.min.js"></script>
+    <script src="fontawesome/js/regular.min.js"></script>
+    <title>Humphrey Kibet</title>
+  </head>
+  <body class="container">
+    <header class="header">
+      <!-- Navigation -->
+      <button class="btn toggle-btn">
+        <i class="fas fa-bars icons"></i>
+      </button>
+      <nav class="header__nav">
+        <div>
+          <img src="./images/me/tshirt.png" alt="myimage" />
+        </div>
+        <ul class="header__nav--links">
+          <li><a class="header__nav--links__item" href="/">home</a></li>
+          <li><a class="header__nav--links__item" href="#about">about</a></li>
+          <li>
+            <a class="header__nav--links__item" href="#projects">projects</a>
+          </li>
+          <li>
+            <a class="header__nav--links__item" href="#contact">Get_In_Touch</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Sidebar -->
+      <div class="header__sidebar-wrapper">
+        <aside class="header__sidebar-wrapper--sidebar">
+          <button class="close-btn">
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="header__sidebar-wrapper--sidebar__links"></div>
+        </aside>
+      </div>
+      <!-- links -->
+      <aside class="header__submenu"></aside>
+    </header>
+    <main class="main">
+      <section class="showcase">
+        <div class="showcase__img">
+          <img src="./Images/me/hkkAbout.png" alt="Official Image" />
+        </div>
+        <div class="showcase__info">
+          <p class="showcase__para">
+            <span>Humphrey Kibet</span>
+            <span> Full Stack Web Developer </span>
+            <span> Specialized in the MERN Stack and its ecosystem </span>
+            <span> (NextJS, React, Redux, MongoDB, Express, NodeJS) </span>
+          </p>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <div class="about__title">
+          <h2>About me</h2>
+        </div>
+
+        <p class="about__desc">
+          Hi, I'm Here to help your next project. My name is Humphrey Kibet and
+          I'm a full stack web developer. In the year 2019, I acquired a
+          bachelors degree in Mathematics and Computer science and I have never
+          stopped pursuing this path professionally ever since.
+        </p>
+      </section>
+      <section id="projects" class="projects">
+        <div class="projects__title">
+          <h2>Featured Projects</h2>
+        </div>
+
+        <div class="projects__list">
+          <details class="projects__content">
+            <summary class="projects__content--heading">Room Booking</summary>
+            <p class="projects__content--para">
+              A website that helps both the hotel and its clients in booking
+              available rooms. Built using Redux and NextJS meta-framework
+              (NodeJS) together with MongoDB.
+              <img
+                src="./Images/projects/roomBooking.PNG"
+                alt="Hotel Booking"
+                class="project__img"
+                height="200px"
+                width="200px"
+              />
+            </p>
+            <span>
+              <a href="https://github.com/kibethh/hotel-booking">
+                <i class="fa fa-code" aria-hidden="true"></i>
+
+                View Source Code</a
+              >
+              <a href="https://hotel-booking-kibethh.vercel.app/"
+                >View Project
+
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </a>
+            </span>
+          </details>
+          <details class="projects__content">
+            <summary class="projects__content--heading">Github Battle</summary>
+            <p class="projects__content--para">
+              This is a project where you can battle any two github repositories
+              and see the winner. Built using ReactJs.
+              <img
+                src="./Images/projects/battle.PNG"
+                alt="Church Image"
+                class="project__img"
+                height="200px"
+                width="200px"
+              />
+            </p>
+            <span>
+              <a href="#">
+                <i class="fa fa-code" aria-hidden="true"></i>
+                View Source Code</a
+              >
+              <a href="https://hk-github-battle.netlify.app/"
+                >View Project
+
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </a>
+            </span>
+          </details>
+          <details class="projects__content">
+            <summary class="projects__content--heading">Church</summary>
+            <p class="projects__content--para">
+              A church website. Built using MONGODB,EXPRESS (NodeJS) with EJS
+              templating engine and VANILLA Javascript.
+              <img
+                src="./Images/projects/riverside showcase.PNG"
+                alt="Church Image"
+                class="project__img"
+                height="200px"
+                width="200px"
+              />
+            </p>
+            <span>
+              <a href="https://github.com/kibethh/riverside-church">
+                <i class="fa fa-code" aria-hidden="true"></i>
+
+                View Source Code</a
+              >
+              <a href="https://riverside-church.herokuapp.com/"
+                >View Project
+
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </a>
+            </span>
+          </details>
+        </div>
+      </section>
+      <section class="skills">
+        <div class="skills__languages">
+          <h3>Frontend Languages</h3>
+          <ul>
+            <li>HTML</li>
+            <li>SASS & CSS</li>
+            <li>Javascript</li>
+          </ul>
+          <hr />
+          <h3>Other Frontend Tools</h3>
+          <ul>
+            <li>ReactJS</li>
+            <li>NextJS</li>
+            <li>Redux</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+        <div class="skills__languages">
+          <h3>Backend Languages</h3>
+          <ul>
+            <li>PHP</li>
+            <li>NodeJS</li>
+          </ul>
+          <hr />
+          <h3>Other Backend Tools</h3>
+          <ul>
+            <li>Codeigniter</li>
+            <li>NextJS</li>
+            <li>ExpressJS</li>
+            <li>Cloudinary</li>
+          </ul>
+        </div>
+        <div class="skills__languages">
+          <h3>Databases</h3>
+          <ul>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+          </ul>
+          <hr />
+          <h3>Versioning</h3>
+          <ul>
+            <li>Git / Github</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="contact__title">
+          <h2>Contact Me</h2>
+        </div>
+        <div class="contact__wrapper">
+          <div class="contact__phone">
+            <!-- <span> <i class="fab fa-phone icons"></i></span> -->
+            <span>
+              <i class="fas fa-phone-alt icons"></i>
+            </span>
+            <span>Phone:</span>
+            <span>+254&nbsp;769&nbsp;950&nbsp;900</span>
+          </div>
+          <div class="contact__email">
+            <span>
+              <i class="far fa-envelope icons"></i>
+            </span>
+            <span>Email:</span>
+            <span>kibethh@gmail.com</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <!-- Footer Social -->
+      <div class="footer__social">
+        <!-- Social Icons -->
+        <div class="footer__icons">
+          <!-- Twitter -->
+          <a href="https://twitter.com/Kibethh" class="footer__icons--link">
+            <i class="fab fa-twitter icons"></i>
+          </a>
+          <!-- LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/kibet-humprey-a00b4b175/"
+            class="footer__icons--link"
+          >
+            <i class="fab fa-linkedin icons"></i>
+          </a>
+
+          <!-- Github -->
+          <a href="https://github.com/kibethh/" class="footer__icons--link">
+            <i class="fab fa-github icons"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="copyright">&copy; All rights reserved 2021</div>
+    </footer>
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>

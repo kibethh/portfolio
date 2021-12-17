@@ -1,0 +1,112 @@
+.main {
+  grid-column: container-start / container-end;
+}
+.showcase {
+  background-color: $ColorGreen;
+  @extend %bg;
+  @extend %sec-padding;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+  button {
+    margin-top: 5rem;
+    padding: 0.8rem 1.7rem;
+    width: 100%;
+    height: 100%;
+    background-color: $ColorYellow;
+    border: none;
+    border-radius: $radius;
+    color: $ColorGreen;
+    font-size: 1.8rem;
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__info {
+    max-width: 100%;
+    text-transform: capitalize;
+    box-shadow: $light-shadow;
+    @extend %para-padding;
+  }
+  &__img {
+    @extend %para-padding;
+    // border-radius: $radius;
+    img {
+      border-radius: 50%;
+      object-fit: cover;
+      width: 25rem;
+      height: 25rem;
+
+      box-shadow: $light-shadow;
+    }
+  }
+  &__para {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: font-size(font-size-regular);
+    :nth-child(1) {
+      color: $color-primary;
+    }
+    :nth-child(2) {
+      color: $color-secondary;
+    }
+    :nth-child(3) {
+      color: $color-quartenary;
+    }
+    :nth-child(4) {
+      color: $color-quinary-m;
+    }
+  }
+
+  //   The 800px break-point
+  @include media-tablet {
+    &__content {
+      &--title {
+        text-align: left;
+      }
+      &--links {
+        justify-content: flex-start;
+      }
+    }
+  }
+  //   The 600px break-point
+  @include media-medium {
+    padding: 4rem;
+    &__content {
+      &--title {
+        font-size: font-size(font-size-xlarge);
+        font-weight: font-weight(font-weight-regular);
+      }
+      &--para {
+        font-size: 2rem;
+      }
+      &--links {
+        a:link,
+        a:visited {
+          font-size: font-size(font-size-small);
+        }
+      }
+    }
+  }
+  //The 400px break-point
+  @include media-small {
+    &__content {
+      &--links {
+        flex-direction: column;
+        align-items: flex-start;
+
+        a:link,
+        a:visited {
+          display: inline-block;
+        }
+        a:link:first-child,
+        a:visited:first-child {
+          margin-bottom: 5vw;
+        }
+      }
+    }
+  }
+}

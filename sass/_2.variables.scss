@@ -1,0 +1,88 @@
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* Colors *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+// Light Color Palette (Custom Properties)
+html {
+  --color-primary: hsl(87, 98%, 34%);
+  --color-primary-m: hsla(87, 100%, 45%, 0.55);
+  --color-secondary: hsl(274, 99%, 72%);
+  --color-secondary-m: hsla(274, 99%, 72%, 0.6);
+  --color-tertiary: hsl(185, 36%, 47%);
+  --color-tertiary-m: rgba(38, 52, 65, 0.65);
+  --color-quaternary: rgb(255, 235, 153);
+  --color-quaternary-m: rgba(192, 162, 43, 0.65);
+  --color-quinary: white;
+  --color-quinary-m: rgba(255, 255, 255, 0.5);
+
+  --color-error: #ff0000f6;
+  --color-error-m: #ff0000a6;
+}
+
+// Dark Color Palette (Custom Properties)
+$color-primary: hsl(87, 98%, 34%);
+$color-primary-m: hsla(87, 100%, 45%, 0.55);
+
+$color-secondary: hsl(274, 99%, 72%);
+$color-secondary-m: hsla(274, 99%, 72%, 0.6);
+
+$color-tertiary: hsl(185, 36%, 47%);
+$color-tertiary-m: rgba(38, 52, 65, 0.65);
+
+$color-quartenary: rgb(255, 235, 153);
+$color-quartenary-m: rgba(192, 162, 43, 0.65);
+
+$color-quinary: white;
+$color-quinary-m: rgba(255, 255, 255, 0.5);
+
+// Portfolio
+$ColorGreen: #0b473f;
+$ColorYellow: #ffc265;
+$ColorPink: #fac6dd;
+$ColorBlue: #c6f7fa;
+
+// *******((((Others)))
+$spacing: 0.1rem;
+$radius: 0.75rem;
+$transition: all 0.5s ease-in-out;
+$light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+$max-width: 1170px;
+$fixed-width: 620px;
+
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* Font Weights *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+$font-weights: (
+  "font-weight-thin": 100,
+  "font-weight-light": 300,
+  "font-weight-regular": 400,
+  "font-weight-medium": 500,
+  "font-weight-bold": 700,
+  "font-weight-black": 900,
+);
+
+@function font-weight($font-weight-style) {
+  @return map-get($font-weights, $font-weight-style);
+}
+
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* Font Sizes *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+$font-sizes: (
+  "font-size-small": calc(1.2rem + 0.5vw),
+  "font-size-regular": calc(1.5rem + 1vw),
+  "font-size-medium": calc(1.5rem + 2vw),
+  "font-size-large": calc(1.5rem + 5vw),
+  "font-size-xlarge": calc(2.5rem + 5vw),
+);
+
+@function font-size($font-size-style) {
+  @return map-get($font-sizes, $font-size-style);
+}
+
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* Break Points *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+$break-points: (
+  "break-point-small": 400px,
+  "break-point-medium": 600px,
+  "break-point-tablet": 800px,
+  "break-point-desktop": 1300px,
+);
+
+@function break-point($break-point-limit) {
+  @return map-get($break-points, $break-point-limit);
+}

@@ -1,0 +1,224 @@
+:root {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Roboto", san-serif;
+  line-height: 1.9;
+
+  // background-repeat: no-repeat;
+}
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-columns:
+    [container-start] 1fr [center-start] repeat(
+      6,
+      [col-start]minmax(min-content, 16.6667rem) [col-end]
+    )
+    [center-end] 1fr [container-end];
+
+  // Media query
+}
+li {
+  list-style: none;
+}
+a:link,
+a:visited {
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+  font-weight: font-weight(font-weight-light);
+  letter-spacing: 0.2rem;
+  font-size: font-size(font-size-small);
+  border: none;
+  position: relative;
+  transition: all 2s ease-in-out;
+}
+a:hover,
+a:active {
+  // border: 0.2px solid $color-quartenary;
+  border-radius: 0.1rem;
+}
+a:link::after,
+a:visited::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+a:hover::after,
+a:active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // background-image: linear-gradient($color-quartenary, $color-quartenary-m);
+}
+
+.icons {
+  font-size: font-size(font-size-medium);
+}
+// Background Properties
+%bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+// Section Padding
+%sec-padding {
+  padding: 6vh 4vw;
+}
+// Paragraph Padding
+%para-padding {
+  padding: 1vw calc(0.1rem + 2.5vw) calc(0.2rem + 1.5vw);
+}
+%input-padding {
+  padding: 0.01rem calc(0.01rem + 2.5vw) 1.2rem;
+}
+
+// Styles for Section headings (h2)
+%sec-heading {
+  font-size: font-size(font-size-medium);
+  font-weight: font-weight(font-weight-light);
+  letter-spacing: 0.2rem;
+}
+%sub-sec-heading {
+  font-size: font-size(font-size-small);
+  font-weight: font-weight(font-weight-light);
+  letter-spacing: 0.01rem;
+  color: $color-quinary;
+}
+// Styles for Form headings (h2)
+%form-heading {
+  font-size: font-size(font-size-regular);
+  font-weight: font-weight(font-weight-medium);
+  letter-spacing: 0.2rem;
+  //   color: $color-font;
+}
+
+// Styles for Section paragraphs (p)
+%sec-para {
+  font-size: font-size(font-size-small);
+  color: $color-quinary;
+  font-family: "Balsamiq Sans", cursive;
+  letter-spacing: 0.2rem;
+}
+// styles for slides paragraph
+%desc-para {
+  font-size: font-size(font-size-small);
+  //   color: $color-quinary;
+  font-family: "Balsamiq Sans", cursive;
+  letter-spacing: 0.1rem;
+}
+
+//Styles for Section h3
+%sec-h3 {
+  font-size: font-size(font-size-small);
+}
+
+//Styles for Section h4
+// %sec-h4 {
+//   color: $color-quinary;
+// }
+// Margin styles
+%sec-margin {
+  margin: calc(1rem + 2vw);
+}
+
+%para-margin {
+  margin: calc(0.1rem + 0.2vw);
+}
+%before {
+  //   color: $color-pseudo-before-m;
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    // background-color: $color-pseudo-before;
+    // background-image: $background;
+  }
+}
+%after {
+  //   color: $color-pseudo-after-m;
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    // background-color: $color-pseudo-after;
+    // background-image: $background;
+  }
+}
+%sec-before {
+  //   color: $color-pseudo-before-m;
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    // background-color: $color-medium;
+    // background-image: $background;
+  }
+}
+%sec-after {
+  color: $color-quinary;
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    // background-color: $color-medium-m;
+    // background-image: $background;
+  }
+}
+%para-link {
+  //   color: $color-primary;
+  //   background-color: $color-background-m;
+  //   border-radius: $radius;
+  padding: 0.01rem;
+  font-size: font-size(font-size-small);
+}
+%links {
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-quinary;
+  font-weight: font-weight(font-weight-light);
+  letter-spacing: 0.2rem;
+  font-size: font-size(font-size-small);
+  border: none;
+  position: relative;
+  transition: all 2s ease-in-out;
+  &:hover,
+  &:active {
+    border-radius: 0.1rem;
+  }
+}

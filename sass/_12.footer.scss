@@ -1,0 +1,62 @@
+.footer {
+  grid-column: container-start / container-end;
+  color: $ColorGreen;
+  background-image: radial-gradient($ColorBlue, $ColorBlue);
+
+  @extend %bg;
+  @extend %sec-padding;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: font-size(font-size-regular);
+  text-transform: capitalize;
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__icons {
+    display: flex;
+
+    &--link:link,
+    &--link:visited {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: calc(0.5rem + 2vw);
+      height: 3rem;
+      width: 3rem;
+      padding: 2.5rem;
+      border-radius: 50%;
+      position: relative;
+      z-index: 1;
+      .icons {
+        color: $ColorGreen;
+        font-size: 3rem;
+      }
+    }
+    &--link:link::before,
+    &--link:visited::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border-radius: inherit;
+      z-index: -1;
+      transform: scale(0);
+      transition: transform 0.5s ease;
+    }
+    &--link:hover::before,
+    &--link:active::before {
+      transform: scale(1);
+    }
+  }
+
+  //   The 600px Mark Break-Point
+  @include media-medium {
+    &__social {
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.skills {
+  grid-column: container-start / container-end;
+  @extend %sec-padding;
+  color: $ColorGreen;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 2rem;
+  font-size: font-size(font-size-regular);
+  // background-image: linear-gradient($ColorPink, $ColorBlue);
+  background-image: radial-gradient($ColorBlue, $ColorBlue);
+  &__languages {
+    box-shadow: $light-shadow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @extend %sec-padding;
+  }
+}
