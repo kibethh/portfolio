@@ -4,6 +4,11 @@
   background-image: radial-gradient($ColorGreen, $ColorGreen);
   .toggle-btn {
     display: none;
+    font-size: 2rem;
+    background: $ColorBlue;
+    border-radius: $radius;
+    border-color: transparent;
+    color: $ColorGreen;
   }
   &__nav {
     display: flex;
@@ -58,12 +63,10 @@
       transform: scale(1);
     }
     &--sidebar {
+      background-color: $ColorGreen;
       width: 90vw;
       height: 95vh;
       max-width: $fixed-width;
-      // background: $color-background;
-      background-image: radial-gradient($ColorBlue, $ColorBlue);
-
       border-radius: $radius;
       box-shadow: $dark-shadow;
       position: relative;
@@ -159,9 +162,9 @@
 }
 .close-btn {
   font-size: 2rem;
-  // background: transparent;
-  // border-color: transparent;
-  // color: $color-quartenary;
+  background: transparent;
+  border-color: transparent;
+  color: $ColorBlue;
   position: absolute;
   top: 1rem;
   right: 1rem;

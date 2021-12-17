@@ -175,6 +175,11 @@ a:active::after {
 
 .header .toggle-btn {
   display: none;
+  font-size: 2rem;
+  background: #c6f7fa;
+  border-radius: 0.75rem;
+  border-color: transparent;
+  color: #0b473f;
 }
 
 .header__nav {
@@ -256,10 +261,10 @@ a:active::after {
 }
 
 .header__sidebar-wrapper--sidebar {
+  background-color: #0b473f;
   width: 90vw;
   height: 95vh;
   max-width: 620px;
-  background-image: radial-gradient(#c6f7fa, #c6f7fa);
   border-radius: 0.75rem;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -375,6 +380,9 @@ a:active::after {
 
 .close-btn {
   font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: #c6f7fa;
   position: absolute;
   top: 1rem;
   right: 1rem;

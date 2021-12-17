@@ -8,12 +8,11 @@ const sublinks = [
     links: [],
   },
   {
-    page: "Get_In_Touch",
+    page: "projects",
     links: [],
   },
-
   {
-    page: "projects",
+    page: "Get_In_Touch",
     links: [],
   },
 ];
